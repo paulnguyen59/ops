@@ -6,6 +6,25 @@
 *:before {
   box-sizing: border-box;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  line-height: 1;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -85,6 +104,7 @@ code {
 }
 .form-group {
   position: relative;
+  z-index: 9999;
 }
 .form-control {
   border: 1px solid #ccc;
@@ -116,5 +136,13 @@ code {
 @keyframes shine {
   100% {
     left: 125%;
+  }
+}
+.app-content {
+  background: #fafafa;
+}
+@media screen and (max-width: 767.98px) {
+  * {
+    line-height: 1.5;
   }
 }
