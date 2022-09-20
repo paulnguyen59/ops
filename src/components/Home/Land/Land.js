@@ -52,6 +52,9 @@ const Land = () => {
                         <LandItem></LandItem>
                         <LandItem></LandItem>
                         <LandItem></LandItem>
+                        <LandItem></LandItem>
+                        <LandItem></LandItem>
+                       
                     </div>
                 </div>
             </section>

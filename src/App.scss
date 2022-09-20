@@ -112,6 +112,7 @@ code {
   width: 100%;
   border-radius: 5px;
   outline: none;
+  font-size: 14px;
   &:focus {
     border: 1px solid var(--color-main);
   }
@@ -140,6 +141,18 @@ code {
 }
 .app-content {
   background: #fafafa;
+}
+.form-group > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.text-danger {
+  color:#e7515a ;
 }
 @media screen and (max-width: 767.98px) {
   * {

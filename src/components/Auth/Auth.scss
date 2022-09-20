@@ -1,0 +1,41 @@
+.auth-wrap {
+    background: #eee;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth-inner {
+    background-color: #fff;
+    width: 500px;
+    padding:30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+.auth-logo {
+    width: 150px;
+    margin:auto;
+}
+.auth-main > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+.auth-main > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+.auth-form > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.auth-inner > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.auth-main .btn-auth {
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.auth-bottom {
+    text-align: center;
+}
