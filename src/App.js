@@ -1,22 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { increaseCounter, decreaseCounter } from './redux/action/counterAction';
+import './App.scss'
+import { Outlet } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Homepage from './components/Home/Homepage';
 const App = () => {
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div>Count = {count}</div>
-        <button onClick={() => dispatch(increaseCounter())}>Increase</button>
-        <button onClick={() => dispatch(decreaseCounter())}>Decrease</button>
-      </header>
+    <div className="app-container">
+      <div className="app-header">
+        <Header></Header>
+      </div>
+      <div className="app-content">
+        <Outlet></Outlet>
+      </div>
+      <div className="app-footer">
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

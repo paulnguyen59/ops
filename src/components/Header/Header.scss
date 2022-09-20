@@ -1,0 +1,33 @@
+.header-main {
+   
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo {
+        width: 150px;
+        padding:10px;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        a {
+            padding: 10px;
+            color:#333;
+            
+        }
+        a.active {
+            color:var(--color-main);
+        }
+    }
+    &-buttons {
+        & > *:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+}
