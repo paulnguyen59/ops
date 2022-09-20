@@ -68,11 +68,7 @@
   &-item > *:not(:last-child) {
     margin-bottom: 15px;
   }
-  .form-group {
-    border: 1px solid #ccc;
-    padding: 0 10px;
-    border-radius: 5px;
-  }
+ 
   .btn {
     position: absolute;
     right: 10px;
@@ -80,9 +76,10 @@
     transform: translateY(-50%);
   }
   .form-control {
-    height: 30px;
-    width: auto;
-    border: none;
+    
+    
+    margin-bottom: 0;
+    padding: 15px 10px;
   }
 }
 .footer-soical {

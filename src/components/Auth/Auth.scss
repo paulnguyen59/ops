@@ -12,6 +12,7 @@
     padding:30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+    max-width: 100%;
 }
 .auth-logo {
     width: 150px;
@@ -38,4 +39,9 @@
 }
 .auth-bottom {
     text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+    .auth-wrap {
+        padding: 0 15px;
+    }
 }
