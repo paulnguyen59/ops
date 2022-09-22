@@ -267,4 +267,28 @@
   .title > *:not(:last-child) {
     margin-bottom: 30px;
   }
+  .category {
+    justify-content: flex-start;
+    grid-auto-columns: 45%;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+    padding: 15px;
+    scroll-padding: 15px;
+    display: grid !important;
+    margin-left: 0 !important;
+  }
+  .category::-webkit-scrollbar {
+    display: none;
+  }
+  .project-list .project-item-thumb {
+    height: 120px;
+  }
 }

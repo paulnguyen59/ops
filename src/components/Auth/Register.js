@@ -23,7 +23,7 @@ const Register = () => {
                 </div>
                
                 <div className="form-group">
-                    <button className='btn btn-primary btn-auth'>Đăng nhập</button>
+                    <button className='btn btn-primary btn-auth'>Đăng ký</button>
                 </div>
             </div>
             <div className="auth-bottom">

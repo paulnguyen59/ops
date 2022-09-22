@@ -21,3 +21,16 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .detail-page {
+    .container {
+      flex-wrap: wrap;
+    }
+    .detail-content {
+      width: 100%;
+    }
+    .container > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

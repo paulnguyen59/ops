@@ -8,8 +8,7 @@
   }
   &-price {
     width: 100%;
-    padding:0 15px;
-   
+    padding: 0 15px;
   }
   &-price-inner {
     background: #fff;
@@ -32,9 +31,17 @@
     color: var(--color-main);
   }
   &-price.invested &-price-title {
-    color:var(--color-second);
+    color: var(--color-second);
   }
   &-price.remain &-price-title {
     color: purple;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .project-invest {
+    flex-wrap: wrap;
+  }
+  .project-invest > *:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
