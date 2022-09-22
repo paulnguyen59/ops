@@ -1,0 +1,50 @@
+.project-vertical > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.project-vertical-item {
+  display: flex;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &-icon {
+    display: flex;
+    font-size: 14px;
+  }
+  &-icon span {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+  }
+  &-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  &-text {
+    width: 70%;
+   
+    padding:15px;
+  }
+  &-text > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &-thumb {
+    flex: 1;
+  }
+  &-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-text h4 {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 25px;
+    
+  }
+}

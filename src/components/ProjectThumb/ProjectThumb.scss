@@ -1,0 +1,19 @@
+.project-thumb {
+ 
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 5px;
+    height: 450px;
+  }
+}
+.project-thumb-wrap > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+.project-thumb-bottom img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

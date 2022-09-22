@@ -13,14 +13,14 @@ const ProjectList = () => {
                         <h2 className="title-main">Danh sách đầu tư ngành F&B</h2>
                     </div>
                     <div className="project-list">
-                        <ProjectItem  title = "Nhà hàng 01"></ProjectItem>
-                        <ProjectItem thumb = {thumb2}  status = 'sold' title = "Nhà hàng 02"></ProjectItem>
-                        <ProjectItem thumb = {thumb3} status = 'deposit' title = "Nhà hàng 03"></ProjectItem>
-                        <ProjectItem thumb = {thumb4} title = "Nhà hàng 04"></ProjectItem>
-                        <ProjectItem thumb = {thumb5} title = "Nhà hàng 05"></ProjectItem>
-                        <ProjectItem title = "Nhà hàng 06"></ProjectItem>
-                        <ProjectItem title = "Nhà hàng 07"></ProjectItem>
-                        <ProjectItem title = "Nhà hàng 08"></ProjectItem>
+                        <ProjectItem  title = "Nhà hàng 01" id = "1"></ProjectItem>
+                        <ProjectItem thumb = {thumb2}  status = 'sold' title = "Nhà hàng 02" id = "2"></ProjectItem>
+                        <ProjectItem thumb = {thumb3} status = 'deposit' title = "Nhà hàng 03" id = "3"></ProjectItem>
+                        <ProjectItem thumb = {thumb4} title = "Nhà hàng 04" id = "4"></ProjectItem>
+                        <ProjectItem thumb = {thumb5} title = "Nhà hàng 05" id = "5"></ProjectItem>
+                        <ProjectItem title = "Nhà hàng 06" id = "6"></ProjectItem>
+                        <ProjectItem title = "Nhà hàng 07" id = "7"></ProjectItem>
+                        <ProjectItem title = "Nhà hàng 08" id = "8"></ProjectItem>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,27 @@
+.project-breadcrumb ul li {
+    list-style: none;
+    display: inline-block;
+}
+.project-breadcrumb ul {
+    padding-left: 0;
+}
+.project-breadcrumb ul li > * {
+    position: relative;
+    padding: 0 20px 0 10px;
+}
+.project-breadcrumb ul li:first-child {
+    margin-left: -10px;
+}
+.project-breadcrumb ul li a:after {content: ">";position: absolute;margin-left: 10px;}
+.project-breadcrumb {
+    background: #eee;
+    padding: 10px;
+}
+
+.project-breadcrumb a {
+    color: #333;
+}
+
+.project-breadcrumb span {
+    color: var(--color-main);
+}

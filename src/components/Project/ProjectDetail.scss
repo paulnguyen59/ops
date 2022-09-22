@@ -1,0 +1,23 @@
+.detail-page {
+  padding: 60px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      padding: 0 15px;
+    }
+  }
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .detail-content {
+    width: 70%;
+  }
+  .detail-sidebar {
+    flex: 1;
+  }
+  .detail-content > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

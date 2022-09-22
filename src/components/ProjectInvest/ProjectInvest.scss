@@ -1,0 +1,40 @@
+.project-invest {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  &-priceNumber {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &-price {
+    width: 100%;
+    padding:0 15px;
+   
+  }
+  &-price-inner {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--color-main);
+  }
+  &-price-inner > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &-price.invested &-price-inner {
+    border: 1px solid var(--color-second);
+  }
+  &-price.remain &-price-inner {
+    border: 1px solid purple;
+  }
+  &-price-title {
+    color: var(--color-main);
+  }
+  &-price.invested &-price-title {
+    color:var(--color-second);
+  }
+  &-price.remain &-price-title {
+    color: purple;
+  }
+}

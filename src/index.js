@@ -17,6 +17,7 @@ import ManageTransactions from './components/User/Content/ManageTransactions';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import AuthLayout from './components/Auth/AuthLayout';
+import ProjectDetail from './components/Project/ProjectDetail';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
@@ -27,6 +28,7 @@ root.render(
             <Route index element={<Homepage />} />
             <Route path="blog" element={<Blog />} />
             <Route path="project" element={<Project />} />
+            <Route path="project-detail/:id" element={<ProjectDetail />} />
           </Route>
           <Route path="/user" element={<User />} >
             <Route index element={<UserDashboard />} />

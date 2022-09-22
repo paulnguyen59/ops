@@ -4,14 +4,15 @@ import thumb from './thumb.jpg';
 const ProjectItem = (props) => {
     const status = props.status ? props.status : "invest";
     const badgeClass = `project-item-badge ${status}`;
+    const url = `project-detail/${props.id}`;
     return (
         <div className='project-item'>
             <div className="project-item-thumb">
-                <Link to="project"> <img src={props.thumb ? props.thumb : thumb} /></Link>
+                <Link to={url}> <img src={props.thumb ? props.thumb : thumb} alt = "" /></Link>
             </div>
             <div className="project-item-text">
                 <h3 className="project-item-title">
-                    <Link to="project">{props.title ? props.title : "Nhà hàng 01"}</Link>
+                    <Link to={url} >{props.title ? props.title : "Nhà hàng 01"}</Link>
                 </h3>
                 <div className="project-item-position">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 project-item-position-icon">

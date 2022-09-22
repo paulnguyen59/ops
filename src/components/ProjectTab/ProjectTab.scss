@@ -1,0 +1,36 @@
+.project-tab > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.project-tab-item {
+    background: #fff;
+    padding: 30px 15px;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+
+.project-tab-content {line-height: 1.5;}
+
+.project-tab-item > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.project-tab-title {
+    text-transform: uppercase;
+    color: var(--color-main);
+    border-bottom: 1px solid #a0bda185;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.project-tab-title:after {
+    content: "";
+}
+
+.project-tab-title span {
+    border-bottom: 3px solid;
+    padding-bottom: 11px;
+}
+.project-tab-content > *:not(:last-child) {
+    margin-bottom: 15px;
+}
