@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../Header/logo.png'
 import './Footer.scss'
 const Footer = () => {
@@ -11,7 +9,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-main-inner">
                         <div className="footer-item footer-info">
-                            <img src={logo} />
+                            <img src={logo} alt = 'Logo footer' />
                             <p className='footer-title'>CÔNG TY TNHH OPEN AND SHARE</p>
                             <div className="footer-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 icon-svg">
@@ -41,11 +39,11 @@ const Footer = () => {
                         <div className="footer-item footer-link">
                             <p className='footer-title'>Liên kết nhanh</p>
                             <ul>
-                                <li><a href='#'>Câu hỏi thường gặp</a></li>
-                                <li><a href='#'>Thông báo</a></li>
-                                <li><a href='#'>Liên hệ</a></li>
-                                <li><a href='#'>Quy chế hoạt động</a></li>
-                                <li><a href='#'>Chính sách bảo mật</a></li>
+                                <li><Link to= '#'>Câu hỏi thường gặp</Link></li>
+                                <li><Link to= '#'>Thông báo</Link></li>
+                                <li><Link to= '#'>Liên hệ</Link></li>
+                                <li><Link to= '#'>Quy chế hoạt động</Link></li>
+                                <li><Link to= '#'>Chính sách bảo mật</Link></li>
                             </ul>
                         </div>
                         <div className="footer-item footer-form">

@@ -5,7 +5,7 @@ const AuthHeader = () => {
     return (
         <>
             <div className="auth-logo">
-                <Link to = "/"><img src = {logo} /></Link>
+                <Link to = "/"><img src = {logo} alt = 'logo' /></Link>
             </div>
         </>
     );

@@ -1,23 +1,15 @@
 import React from 'react';
-import slider1 from './slide1.jpg'
-import slider2 from './slider2.jpg'
+
 import slideBg from './slidebg2.jpg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Home.scss'
-import Slider from "react-slick";
-import LandItem from './Land/LandItem';
+
+
 import Land from './Land/Land';
 import ProjectList from './ProjectList';
 const Homepage = () => {
-    let settings = {
-        arrows: true,
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
+   
 
     return (
         <>
